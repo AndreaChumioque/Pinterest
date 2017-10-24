@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    /* outline: 1px solid red; */
+    height: 65px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 5px;
+    box-sizing: border-box;
+    border-bottom: 0.5px solid #efefef;
+}
+
+header figure {
+    margin: 0 7px;
+    width: 55px;
+    height: 55px;
+    padding: 2px;
+    box-sizing: border-box;
+    border: 1.5px solid #fff;
+    border-radius: 100%;
+    float: left;
+}
+
+header figure:active {
+    border: 1.5px solid #b5b5b5;
+}
+
+header figure img {
+    width: 100%;
+    padding: 10px;
+    /* outline: 1px dashed green; */
+    box-sizing: border-box;
+    border-radius: 100%;
+}
+
+header figure a img:hover {
+    background-color: #f0f0f0;
+}
+
+header input {
+    /* outline: 1px solid salmon; */
+    width: 70%;
+    height: 40px;
+    margin-left: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #efefef;
+    margin-top: 7px;
+}
