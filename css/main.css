@@ -1,6 +1,8 @@
+/* Seteando css */
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Hind', sans-serif;
 }
 
 header {
@@ -13,7 +15,11 @@ header {
     padding: 5px;
     box-sizing: border-box;
     border-bottom: 0.5px solid #efefef;
+    background-color: #fff;
+    z-index: 1;
 }
+
+/* Logo */
 
 header figure {
     margin: 0 7px;
@@ -33,22 +39,79 @@ header figure:active {
 header figure img {
     width: 100%;
     padding: 10px;
-    /* outline: 1px dashed green; */
     box-sizing: border-box;
     border-radius: 100%;
 }
 
-header figure a img:hover {
+header figure:hover a img {
     background-color: #f0f0f0;
 }
 
-header input {
-    /* outline: 1px solid salmon; */
+/* fin logo */
+
+/* Barra search */
+
+header .search-bar {
     width: 70%;
-    height: 40px;
     margin-left: 5px;
+    margin-top: 7px;
+    float: left;
+}
+
+header .search-bar input {
+    width: 100%;
+    height: 40px;
+    font-family: 'Hind', sans-serif;
+    font-size: 18px;
     border: none;
     border-radius: 5px;
     background-color: #efefef;
-    margin-top: 7px;
+    padding-left: 40px;
+}
+
+header .search-bar .icon {
+    color: #b5b5b5;
+    line-height: 38px;
+    position: absolute;
+    left: 90px;
+    font-size: 20px;    
+}
+
+/* Fin barra search */
+
+/* barra Menu */
+
+header .menu {
+    float: right;
+}
+
+main {
+    padding-top: 65px;
+    margin: 0 auto;
+    width: 1040px;
+}
+
+#contenido {
+    outline: 1px dashed blue;
+    padding-top: 24px;
+    padding-bottom:24px;
+    margin: 0 auto;
+    overflow: auto;
+    column-count: 4;
+    column-gap: 0px;
+    column-fill: auto;
+}
+
+.box {
+    outline: 1px solid red;
+    width: 260px;
+    padding: 0 12px 28px 12px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.box img {
+    /* margin: 0; */
+    width: 100%;
+    border-radius: 10px;
 }
