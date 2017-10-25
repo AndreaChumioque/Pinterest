@@ -5,9 +5,9 @@ body {
     font-family: 'Hind', sans-serif;
 }
 
+/* Encabezado */
 header {
-    /* outline: 1px solid red; */
-    height: 65px;
+    /* height: 65px; */
     position: fixed;
     top: 0;
     right: 0;
@@ -17,10 +17,10 @@ header {
     border-bottom: 0.5px solid #efefef;
     background-color: #fff;
     z-index: 1;
+    overflow: hidden;
 }
 
 /* Logo */
-
 header figure {
     margin: 0 7px;
     width: 55px;
@@ -46,72 +46,109 @@ header figure img {
 header figure:hover a img {
     background-color: #f0f0f0;
 }
-
 /* fin logo */
 
 /* Barra search */
-
-header .search-bar {
+.search-bar {
+    /* outline: 1px solid red; */
     width: 70%;
+    border-radius: 5px;
+    background-color: #efefef;
     margin-left: 5px;
     margin-top: 7px;
     float: left;
 }
 
-header .search-bar input {
-    width: 100%;
+.search-bar input {
+    /* outline: 1px dashed green; */
+    width: 70%;
     height: 40px;
     font-family: 'Hind', sans-serif;
     font-size: 18px;
-    border: none;
-    border-radius: 5px;
+    margin: 0 10px;
+    color: #757575;
     background-color: #efefef;
-    padding-left: 40px;
+    border: none;
+    box-sizing: border-box;
+    float: left;
 }
 
-header .search-bar .icon {
+.search-bar a .icon {
+    margin: 0 10px;
     color: #b5b5b5;
     line-height: 38px;
-    position: absolute;
-    left: 90px;
+    float: left;
     font-size: 20px;    
 }
 
+header .search-bar p {
+    float: left;
+    line-height: 40px;
+    margin: 0 10px;
+    color: #757575;
+}
 /* Fin barra search */
 
-/* barra Menu */
-
-header .menu {
-    float: right;
+/* nav Menu */
+header nav.menu {
+    float: left;
+    margin: 0 12px;
+    padding: 0;
 }
 
+nav.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
+nav.menu ul li {
+    width: 55px;
+    height: 55px;
+    float: left;
+    margin-right: 10px;
+    text-align: center;
+}
+
+nav.menu ul li:last-child {
+    margin-right: 0;
+}
+
+nav.menu ul li a {
+    color: #b5b5b5;
+    text-decoration: none;
+}
+
+nav.menu ul li a .icon {
+    font-size: 25px;
+    line-height: 55px;
+}
+/* Fin Barra Menu */
+
+/* Contenido posts */
 main {
     padding-top: 65px;
     margin: 0 auto;
-    width: 1040px;
 }
 
 #contenido {
     outline: 1px dashed blue;
-    padding-top: 24px;
-    padding-bottom:24px;
+    padding: 24px 60px;
     margin: 0 auto;
-    overflow: auto;
     column-count: 4;
+    column-width: 260px;
     column-gap: 0px;
     column-fill: auto;
 }
 
 .box {
     outline: 1px solid red;
-    width: 260px;
     padding: 0 12px 28px 12px;
     box-sizing: border-box;
-    position: relative;
 }
 
 .box img {
-    /* margin: 0; */
     width: 100%;
     border-radius: 10px;
 }
