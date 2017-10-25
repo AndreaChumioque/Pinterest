@@ -7,22 +7,27 @@ body {
 
 /* Encabezado */
 header {
-    /* height: 65px; */
+    width: 100%;
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
-    padding: 5px;
+    padding-top: 5px;
     box-sizing: border-box;
-    border-bottom: 0.5px solid #efefef;
     background-color: #fff;
     z-index: 1;
+    overflow: hidden;
+    text-align: center;
+}
+
+.above {
+    margin: 0 auto;
     overflow: hidden;
 }
 
 /* Logo */
 header figure {
-    margin: 0 7px;
+    margin: 0 12px;
     width: 55px;
     height: 55px;
     padding: 2px;
@@ -50,8 +55,7 @@ header figure:hover a img {
 
 /* Barra search */
 .search-bar {
-    /* outline: 1px solid red; */
-    width: 70%;
+    width: 75%;
     border-radius: 5px;
     color: #555;
     font-weight: bold;
@@ -62,7 +66,6 @@ header figure:hover a img {
 }
 
 .search-bar input {
-    /* outline: 1px dashed green; */
     width: 70%;
     height: 40px;
     font-family: 'Hind', sans-serif;
@@ -93,20 +96,20 @@ header .search-bar p {
 /* Fin barra search */
 
 /* nav Menu */
-header nav.menu {
-    float: left;
+header nav#menu {
+    float: right;
     margin: 0 12px;
     padding: 0;
 }
 
-nav.menu ul {
+#menu ul {
     list-style: none;
     margin: 0;
     padding: 0;
     overflow: auto;
 }
 
-nav.menu ul li {
+#menu ul li {
     width: 55px;
     height: 55px;
     float: left;
@@ -114,24 +117,60 @@ nav.menu ul li {
     text-align: center;
 }
 
-nav.menu ul li:last-child {
+#menu ul li:last-child {
     margin-right: 0;
 }
 
-nav.menu ul li a {
+#menu ul li a {
     color: #b5b5b5;
     text-decoration: none;
 }
 
-nav.menu ul li a .icon {
+#menu ul li a .icon {
     font-size: 25px;
     line-height: 55px;
 }
 /* Fin Barra Menu */
 
+header #suggestions {
+    clear: both;
+    padding: 12px 0;
+    border-top: 0.5px solid #efefef; 
+    border-bottom: 0.5px solid #efefef;
+}
+
+#suggestions ul {
+    list-style: none;
+    overflow: auto;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#suggestions li {
+    float: left;
+    margin-right: 10px;
+}
+
+#suggestions li:last-child {
+    margin-right: 0;
+}
+
+#suggestions a {
+    display: block;
+    text-decoration: none;
+    font-weight: 700;
+    background-color: #30dfe6;
+    color: #fff;
+    border-radius: 5px;
+    line-height: 60px;
+    padding: 0 12px;
+}
+
+
 /* Contenido posts */
 main {
-    padding-top: 65px;
+    padding-top: 137px;
     margin: 0 auto;
 }
 
