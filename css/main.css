@@ -146,7 +146,6 @@ main {
 }
 
 .box {
-    /* outline: 1px solid red; */
     padding: 0 12px 28px 12px;
     box-sizing: border-box;
     break-inside: avoid;
@@ -194,7 +193,7 @@ main {
     line-height: 30px;
     color: #fff;
     border-radius: 100%;
-    background-color: #66ffb8;
+    background-color: #d597a1;
     float: left;
 }
 
@@ -203,7 +202,6 @@ main {
     padding-left: 40px;
     font-size: 14px;
     line-height: 15px;
-    /* float: left; */
 }
 
 .user p {
