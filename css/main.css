@@ -53,6 +53,8 @@ header figure:hover a img {
     /* outline: 1px solid red; */
     width: 70%;
     border-radius: 5px;
+    color: #555;
+    font-weight: bold;
     background-color: #efefef;
     margin-left: 5px;
     margin-top: 7px;
@@ -65,8 +67,9 @@ header figure:hover a img {
     height: 40px;
     font-family: 'Hind', sans-serif;
     font-size: 18px;
+    font-weight: bold;
     margin: 0 10px;
-    color: #757575;
+    color: #555;
     background-color: #efefef;
     border: none;
     box-sizing: border-box;
@@ -143,12 +146,72 @@ main {
 }
 
 .box {
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
     padding: 0 12px 28px 12px;
     box-sizing: border-box;
+    break-inside: avoid;
+    overflow: auto;
 }
 
 .box img {
     width: 100%;
     border-radius: 10px;
 }
+
+.box .icon {
+    float: right;
+    margin: 5px 0;
+    color: #b5b5b5;    
+}
+
+.caption-text {
+    margin: 0;
+    padding: 0;
+    color: #555;
+    width: 80%;
+    float: left;
+}
+
+.caption-text h4, .caption-text p {
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: #555;
+    line-height: 20px;
+}
+
+.user {
+    clear: both;
+    margin: 0;
+    overflow: auto;
+}
+
+.user .circle {
+    display: block;
+    width: 30px;
+    height: 30px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    border-radius: 100%;
+    background-color: #66ffb8;
+    float: left;
+}
+
+.user .name {
+    margin: 5px 0;
+    padding-left: 40px;
+    font-size: 14px;
+    line-height: 15px;
+    /* float: left; */
+}
+
+.user p {
+    margin: 0;
+    padding-left: 40px;
+    font-size: 14px;
+    display: block;
+}
+
+
+
